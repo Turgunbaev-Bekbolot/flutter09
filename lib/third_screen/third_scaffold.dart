@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lesson34_practice/second_screen/second_scaffold.dart';
 import 'package:lesson34_practice/third_screen/body.dart';
-import 'package:lesson34_practice/third_screen/epizod.dart';
-import 'package:lesson34_practice/third_screen/information.dart';
-import 'package:lesson34_practice/third_screen/profile.dart';
 
 class ThirdScreen extends StatelessWidget {
   const ThirdScreen({Key? key}) : super(key: key);
