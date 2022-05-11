@@ -4,12 +4,14 @@ class Personage extends StatelessWidget {
   final String text;
   final String image;
   final bool? isColor;
+  final bool? isText;
 
   const Personage({
     Key? key,
     required this.text,
     required this.image,
     this.isColor,
+    this.isText,
   }) : super(key: key);
 
   @override
@@ -41,7 +43,7 @@ class Personage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'живой',
+                        isText! ? 'живой' : 'мертвый',
                         style: TextStyle(
                           color: isColor! ? Color(0xff43D049) : Colors.red,
                           fontSize: 10,

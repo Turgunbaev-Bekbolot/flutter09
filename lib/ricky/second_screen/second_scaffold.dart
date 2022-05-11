@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lesson34_practice/first_screen/first_scaffold.dart';
-import 'package:lesson34_practice/second_screen/body.dart';
+import 'package:lesson34_practice/ricky/first_screen/first_scaffold.dart';
+
+import '../second_screen/body.dart';
 
 class SecondScreen extends StatelessWidget {
   const SecondScreen({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lesson34_practice/second_screen/second_scaffold.dart';
+import 'package:lesson34_practice/ricky/second_screen/second_scaffold.dart';
 
 class CustomButton extends StatelessWidget {
   final String text;

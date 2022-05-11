@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lesson34_practice/second_screen/personages.dart';
-import 'package:lesson34_practice/third_screen/third_scaffold.dart';
+import 'package:lesson34_practice/ricky/second_screen/personages.dart';
+import 'package:lesson34_practice/ricky/third_screen/third_scaffold.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -115,32 +115,38 @@ class Body extends StatelessWidget {
                         text: 'Рик Санчез',
                         image: 'oneone',
                         isColor: true,
+                        isText: true,
                       ),
                     ),
                     Personage(
                       text: 'Директор Агенства',
                       image: 'dva',
                       isColor: true,
+                      isText: true,
                     ),
                     Personage(
                       text: 'Морти Смит',
                       image: 'tri',
                       isColor: true,
+                      isText: true,
                     ),
                     Personage(
                       text: 'Саммер Смит',
                       image: 'salam',
                       isColor: true,
+                      isText: true,
                     ),
                     Personage(
                       text: 'Альберт Эйнштейн',
                       image: 'five',
                       isColor: false,
+                      isText: false,
                     ),
                     Personage(
                       text: 'Алан Райлс',
                       image: 'six',
                       isColor: false,
+                      isText: false,
                     ),
                   ],
                 ),

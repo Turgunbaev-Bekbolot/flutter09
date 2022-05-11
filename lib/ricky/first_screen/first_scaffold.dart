@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lesson34_practice/first_screen/bottom_container.dart';
-import 'package:lesson34_practice/first_screen/custom_button.dart';
-import 'package:lesson34_practice/first_screen/search_container.dart';
+import 'package:lesson34_practice/ricky/first_screen/bottom_container.dart';
+import 'package:lesson34_practice/ricky/first_screen/custom_button.dart';
+import 'package:lesson34_practice/ricky/first_screen/search_container.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({Key? key}) : super(key: key);
