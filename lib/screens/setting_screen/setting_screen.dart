@@ -176,15 +176,19 @@ class Settings extends StatelessWidget {
                 child: Container(
                   width: MediaQuery.of(context).size.width * 0.9147,
                   height: 60,
-                  child: Expanded(
-                    child: Text(
-                      'Зигерионцы помещают Джерри и Рика в симуляцию, чтобы узнать секрет изготовления концен-трирован- ной темной материи.',
-                      style: TextStyle(
-                        color: Color(0xff0B1E2D),
-                        fontSize: 13,
-                        fontWeight: FontWeight.w400,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          'Зигерионцы помещают Джерри и Рика в симуляцию, чтобы узнать секрет изготовления концен-трирован- ной темной материи.',
+                          style: TextStyle(
+                            color: Color(0xff0B1E2D),
+                            fontSize: 13,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
                       ),
-                    ),
+                    ],
                   ),
                 ),
               ),
