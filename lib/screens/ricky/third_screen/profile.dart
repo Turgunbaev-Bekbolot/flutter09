@@ -19,16 +19,14 @@ class ProfileInfo extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 138, left: 135),
-              child: Container(
-                width: 146,
-                height: 146,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(100),
-                ),
-                child: Image.asset('assets/images/rick2.png'),
+            Container(
+              margin: EdgeInsets.only(top: 138, left: 135),
+              width: 146,
+              height: 146,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(100),
               ),
+              child: Image.asset('assets/images/rick2.png'),
             ),
           ],
         ),
@@ -53,18 +51,16 @@ class ProfileInfo extends StatelessWidget {
             top: 30,
             bottom: 20,
           ),
-          child: Container(
+          child: SizedBox(
             width: MediaQuery.of(context).size.width * 0.9147,
             height: 80,
-            child: Expanded(
-              child: Text(
-                'Главный    протагонист    мультсериала    «Рик и Морти».  Безумный ученый,  чей алкоголизм,  безрассудность  и  социопатия  заставляют  беспокоиться  семью  его  дочери.',
-                style: TextStyle(
-                  height: 1.4,
-                  color: Color(0xff0B1E2D),
-                  fontSize: 13,
-                  fontWeight: FontWeight.w400,
-                ),
+            child: Text(
+              'Главный    протагонист    мультсериала    «Рик и Морти».  Безумный ученый,  чей алкоголизм,  безрассудность  и  социопатия  заставляют  беспокоиться  семью  его  дочери.',
+              style: TextStyle(
+                height: 1.4,
+                color: Color(0xff0B1E2D),
+                fontSize: 13,
+                fontWeight: FontWeight.w400,
               ),
             ),
           ),

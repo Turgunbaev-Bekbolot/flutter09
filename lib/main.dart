@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:lesson34_practice/ricky/first_screen/first_scaffold.dart';
 import 'package:lesson34_practice/screens/epizodes_screen/epizodes_screen.dart';
 import 'package:lesson34_practice/screens/personage_screen/personage_screen.dart';
+import 'package:lesson34_practice/screens/ricky/first_screen/first_scaffold.dart';
 import 'package:lesson34_practice/screens/setting_screen/setting_screen.dart';
+import 'package:lesson34_practice/screens/signin_screen/sign_in_screen.dart';
 
 void main() {
-  runApp(const MyBottomNavigationBar());
+  runApp(const MyApp());
 }
 
-class MyBottomNavigationBar extends StatefulWidget {
-  const MyBottomNavigationBar({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
-  @override
-  State<MyBottomNavigationBar> createState() => _MyBottomNavigationBarState();
-}
-
-class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,15 +19,13 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CustomBottomBar(),
+      home: LoginPassword(),
     );
   }
 }
 
 class CustomBottomBar extends StatefulWidget {
-  const CustomBottomBar({
-    Key? key,
-  }) : super(key: key);
+  const CustomBottomBar({Key? key}) : super(key: key);
 
   @override
   State<CustomBottomBar> createState() => _CustomBottomBarState();
@@ -53,6 +47,7 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
     Epizodes(),
     Settings(),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

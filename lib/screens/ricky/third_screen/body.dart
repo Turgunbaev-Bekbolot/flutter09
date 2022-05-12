@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lesson34_practice/ricky/third_screen/epizod.dart';
-import 'package:lesson34_practice/ricky/third_screen/information.dart';
-import 'package:lesson34_practice/ricky/third_screen/profile.dart';
+import 'package:lesson34_practice/screens/ricky/third_screen/epizod.dart';
+import 'package:lesson34_practice/screens/ricky/third_screen/information.dart';
+import 'package:lesson34_practice/screens/ricky/third_screen/profile.dart';
 
 class Body extends StatelessWidget {
   const Body({

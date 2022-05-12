@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:lesson34_practice/ricky/second_screen/second_scaffold.dart';
-import 'package:lesson34_practice/ricky/third_screen/body.dart';
+import 'package:lesson34_practice/screens/ricky/first_screen/first_scaffold.dart';
 
-class ThirdScreen extends StatelessWidget {
-  const ThirdScreen({Key? key}) : super(key: key);
+import '../second_screen/body.dart';
+
+class SecondScreen extends StatelessWidget {
+  const SecondScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class ThirdScreen extends StatelessWidget {
             Navigator.pop(
               context,
               MaterialPageRoute(
-                builder: (context) => SecondScreen(),
+                builder: (context) => FirstScreen(),
               ),
             );
           },

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lesson34_practice/ricky/second_screen/personages.dart';
-import 'package:lesson34_practice/ricky/third_screen/third_scaffold.dart';
+import 'package:lesson34_practice/screens/ricky/second_screen/personages.dart';
+import 'package:lesson34_practice/screens/ricky/third_screen/third_scaffold.dart';
 
 class Body extends StatelessWidget {
   const Body({
@@ -56,17 +56,14 @@ class Body extends StatelessWidget {
                             fontWeight: FontWeight.w400,
                           ),
                         ),
-                        Padding(
-                          padding:
-                              const EdgeInsets.only(top: 1, left: 5, right: 5),
-                          child: Container(
-                            width: 2,
-                            height: 2,
-                            color: Color(0xff828282),
-                          ),
+                        Container(
+                          margin: EdgeInsets.only(top: 1, left: 5, right: 5),
+                          width: 2,
+                          height: 2,
+                          color: Color(0xff828282),
                         ),
                         Text(
-                          'Измереник С-137',
+                          'Измерение С-137',
                           style: TextStyle(
                             color: Color(0xff828282),
                             fontSize: 12,
@@ -75,20 +72,16 @@ class Body extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 20),
-                      child: Container(
-                        width: MediaQuery.of(context).size.width * 0.9147,
-                        height: 80,
-                        child: Expanded(
-                          child: Text(
-                            'Это планета, на которой проживает человеческая раса, и главное место для персонажей Рика и Морти. Возраст этой Земли более 4,6 миллиардов лет, и она является четвертой планетой от своей звезды.',
-                            style: TextStyle(
-                              color: Color(0xff0B1E2D),
-                              fontSize: 13,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 20),
+                      width: MediaQuery.of(context).size.width * 0.9147,
+                      height: 80,
+                      child: Text(
+                        'Это планета, на которой проживает человеческая раса, и главное место для персонажей Рика и Морти. Возраст этой Земли более 4,6 миллиардов лет, и она является четвертой планетой от своей звезды.',
+                        style: TextStyle(
+                          color: Color(0xff0B1E2D),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400,
                         ),
                       ),
                     ),
@@ -103,20 +96,11 @@ class Body extends StatelessWidget {
                     SizedBox(
                       height: 25,
                     ),
-                    InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ThirdScreen()),
-                        );
-                      },
-                      child: Personage(
-                        text: 'Рик Санчез',
-                        image: 'oneone',
-                        isColor: true,
-                        isText: true,
-                      ),
+                    Personage(
+                      text: 'Рик Санчез',
+                      image: 'oneone',
+                      isColor: true,
+                      isText: true,
                     ),
                     Personage(
                       text: 'Директор Агенства',
